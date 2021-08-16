@@ -1,0 +1,162 @@
+The long term solution:
+Is to have a smart contract deployed on mainnet to be able an Art Value platform to sell numbers / NFTs.
+ 
+The short term solution (and current work scope): 
+Is to use OpenSea to be able to quickly start selling numbers using a smart contract.
+Important: the smart contract for the short and long term solution need to be the same.
+ 
+There are three parts to the short term solution:
+The smart contract
+- this is the proof that the idea works and is viable. Investors and other programmers will consider this when determining how good the art value idea/solution is. The code if public on github
+The art value website
+- needs to be able to show the numbers/artworks
+The OpenSea platform
+- is the current tool we can use to make a fast time to market. It is a test and experiment with OpenSea (later we can use other platforms or focus on the main ArtValue platform with our auctions)
+ 
+Prioritization:
+1. Make sure the smart contract works, can be used as intended, and are "eternal"
+2. Don't mess up the long term (make sure the contract is "platform agnostic"), see prio 1
+3. Time to market with functionality
+4. Visual appeal
+ 
+Admin (suggestions):
+Communication: Slack
+Documentation: GitHub
+Division of work and tasks: Trello
+ 
+ 
+Work:
+Github
+Server 
+ 
+ 
+--
+ 
+OpenSea integration
+1.     Create OpenSea collection with Art Value contract on OpenSea website (it is already created. To check what address is used now and if we could change it for a safer one)
+2.     Start sales on OpenSea website
+ 
+ 
+ 
+In parallel dev and deploy of Smart contract with ERC 721 only
+1.     Develop ArtValue smart contract on test net / Rinkeby
+2.     Mint NFTs on testnet. Test / Debug on testnet
+3.     Change to a safer crypto address
+4.     Deploy ArtValue smart contract on test net / Rinkeby. Test it
+5.     Deploy ArtValue smart contract on main net. Test it
+6.     Mint ERC 721 NFT Tokens on mainnet (this contract stays forever)
+7.     Start sales with OpenSea auction engine
+ 
+ 
+ 
+ArtValue.org website
+1.     Single artwork pages (or better to have a gallery page with links to single artwork pages so to show how many auctions are done and upcoming ones, what artworks on sales or sold)
+2.     If OpenSea allows us to embed OpenSea Art Value collection and auctions – we embed them on ArtValue.org. After it works perfectly – we customize the design to fit Art Value style
+ 
+--
+ 
+Priority – time. We need to make it ASAP.
+ 
+Timetable:
+ 
+15th August - Final LAUNCH. 
+In 2 weeks to launch the OpenSea with deployed contract on mainnet.
+ 
+10th August - deploy contract on mainnet.
+ 
+12th August - mint 20 NFT tokens
+ 
+ 
+--
+ 
+ 
+Numbers
+ 
+2021,06 – 
+https://artvalue.org/fln/202106.png
+https://artvalue.org/n/202106-2/
+ 
+500,05
+5055,50
+20202,02
+707,07
+120 000,00 = 120 000
+88 000,00 = 88 000
+ 
+2021,07
+44044,00
+54,54 – 540,54 – 5454,45   = SUM – 1 token or 3?
+46 – 4646,46 – 46666,66
+333,45
+1 000 000, 01
+202107,20
+202107,21
+80080,80
+12020,00
+123456,78
+1234567,89
+ 
+ 
+Expired number - 2021,06
+The number 2021,06.
+
+The Number is generated as a month date of the first Art Value Token. This is June of 2021. The number shows the importance of the date in a numerical representation. Dates are very important to our lives.
+
+Dates is one form of Art Value numbers. Postal addresses, street numbers, car plate numbers could be turned into Art Value Numbers, NFTs and decimals (as main numerical Art Value expression). Other types of numbers could be imaginative numbers, decimals, binary numbers, digits, etc.
+
+Generated on 2021-06-07 at 03:36:23PM UTC.
+
+Minting transaction: https://rinkeby.etherscan.io/tx/0xf73b34f5bd7fd43cff80f7b515fda59c4aa6f05c6bb37fd377f51f9b2dc5db50
+ 
+ 
+ 
+--
+ 
+Future plans:
+ 
+This OpenSea experiment is to sell Numbers for a higher price. 
+ 
+Later we aim to create a generative auction on OpenSea, using their auctions. By generative meaning that the last highest bid wins and the winner of the auction pays that same amount (e.g. NFT Number 5055,66 costs 5055,66 euros).
+ 
+ 
+ 
+ 
+ 
+--
+ 
+ 
+The contract is deployed on Rinkeby!
+
+The address is: 0x310411ceda6235ad7ce6e8db3febc95870af8892
+ 
+ 
+ 
+The ERC721 "Art Value Number"/"AVN" contract is now verified on Etherscan:
+https://rinkeby.etherscan.io/address/0x310411ceda6235ad7ce6e8db3febc95870af8892#code
+<https://rinkeby.etherscan.io/address/0x310411ceda6235ad7ce6e8db3febc95870af8892#code>
+
+...which means we also have a "block explorer" (not technically a block
+explorer but that is what CoinMarketCap calls it):
+https://rinkeby.etherscan.io/token/0x310411ceda6235ad7ce6e8db3febc95870af8892
+<https://rinkeby.etherscan.io/token/0x310411ceda6235ad7ce6e8db3febc95870af8892>
+
+I also minted the first token, with TokenID=1 and the number 2021,06
+(encoded as 202106):
+https://rinkeby.etherscan.io/token/0x310411ceda6235ad7ce6e8db3febc95870af8892?a=1#inventory
+<https://rinkeby.etherscan.io/token/0x310411ceda6235ad7ce6e8db3febc95870af8892?a=1#inventory>
+
+Looking into adding the metadata on artvalue.org right now.
+ 
+ 
+ 
+-
+ 
+Now is deployed another version of the contract.
+
+It's on OpenSea at https://testnets.opensea.io/collection/art-value/
+ 
+The old version (not relevant anymore) was this one: https://testnets.opensea.io/collection/art-value-number
+
+Editing the collection page now works (by logging in using MetaMask and using the pencil button on OpenSea).
+
+The token metadata still doesn't get picked up though. I have a few more ideas to try but I don't have much hope as everything is already according to spec and exactly like other tokens. We could meet tomorrow evening? I don't have any new stuff to show though.
