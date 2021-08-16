@@ -1,0 +1,50 @@
+Here are a few different steps in different forms written down:
+
+1. LINKS
+ 
+There is already a deployed version of the contract on TestNet on OpenSea.
+
+It's on OpenSea at https://testnets.opensea.io/collection/art-value/
+
+Editing the collection page now works (by logging in using MetaMask and using the pencil button on OpenSea).
+
+The token metadata still doesn't get picked up though. 
+ 
+After we fix all issues on the TestNet we need to deploy the smart contract on MainNet.
+
+Next to make URL for the upcoming numbers which are not yet auctioned
+http://artvalue.org/not-yet-auctioned-token-xxx
+ 
+This is the example of the ArtValue.or URL with a final artwork
+https://artvalue.org/n/202106-2/
+In this link you also find Etherscan link for the token
+ 
+We need to deploy smart contract on the mainnet.
+ 
+--
+ 
+2. TEXT
+
+The Art Value contract has to be deployed on mainnet and we need to connect it with the OpenSea engine - the NFT marketplace with auctions. We need to connect our smart contract with their auction engine. Basically, it is that the user goes to OpenSea to use their Auction and he makes bids there, the user bids and keeps in mind that what he bids is the actual value he is looking for receiving as a final Artwork. Whatever goes there as competition in auction, the final result is that the Winner of the auction receives his Bid as an Artwork. The Final Bid / Artwork / NFT number is after the auction finished is written manually on our server and the NFT is minted with our contract on their wallets (actually, the token is minted prior the whole process, we put the token on OpenSea to sell it, but it has no value, and the value is added only after the auction is finished). We modify the contract through a non-standard method that will be implemented on the smart contract. During the auction there will be an URL placeholder value like 'artvalue.org/not-yet-auctioned-token-xxx'. During the auction we make the placeholder point to the auction on OpenSea, so it becomes some sort of place for that particular auction and later for the final artwork. And after the auction the URL of the Artwork is changed to www.artvalue.org/5000,00 .
+ 
+For example, the won Number 5000,00 gets on our server written and on our contract as NFT. The user receives NFT Number on blockchain and Number written on our server / on artvalue.org URL, like www.artvalue.org/5000,00 (if comma is even possible on URL).
+ 
+ 
+--
+ 
+3. A few links to OpenSea integration
+ 
+Integrating OpenSea engine with Art Value
+https://openseahelp.zendesk.com/hc/en-us/articles/1500003249342-How-do-I-partner-with-OpenSea-or-use-the-White-Label-
+ 
+This is the basic blog post for making own collection and adding own smart contracts on OpenSea: 
+https://opensea.io/blog/announcements/introducing-the-collection-manager/
+ 
+We already have our contract on OpenSea testnet. It's on OpenSea at https://testnets.opensea.io/collection/art-value/
+ 
+Opensea has its own documentation setup. Therefore, I would follow the following guide (https://docs.opensea.io/docs/embeds) in order to embed the OpenSea collection to the Art Value website. No matter what your tech stack in use currently is, to adjust the artwork pictures CSS is used to make it a proper stylized fit to your website.
+ 
+ 
+This has to be connected to the ArtValue.org website with single artwork pages.
+ 
+Please find more information on your own about that and how to implement it.
